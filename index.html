@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Word's the Word! [Brian Coppola]</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Word game built with vanilla JavaScript, CSS, and HTML" />
+
+    <!-- CSS link -->
+    <link href="css/styles.css" rel="stylesheet" type="text/css" />
+
+    <!-- JS links -->
+    <script defer src="js/main.js"></script>
+    <script src="js/dictionary.js"></script>
+    <script src="js/targetWords.js"></script>
+
+    <!-- Typeface links -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div class="alert-container"></div>
+    <div class="backdrop hidden"></div>
+    <div class="modal hidden">
+      <h3 class="modal__message"></h3>
+      <p>Word: <span class="modal__word"></span></p>
+      <button class="modal__button" type="button" onclick="startGame()">Play again</button>
+    </div>
+
+    <div class="container">
+      <header class="header">
+        <h1>Word's the Word!</h1>
+        <h2>A striking resemblance to something&#160;else.</h2>
+      </header>
+
+      <main class="main">
+        <div class="guess-board">
+          <div class="guess-board__tile"></div>
+          <div class="guess-board__tile"></div>
+          <div class="guess-board__tile"></div>
+          <div class="guess-board__tile"></div>
+          <div class="guess-board__tile"></div>
+          <div class="guess-board__tile"></div>
+          <div class="guess-board__tile"></div>
+          <div class="guess-board__tile"></div>
+          <div class="guess-board__tile"></div>
+          <div class="guess-board__tile"></div>
+          <div class="guess-board__tile"></div>
+          <div class="guess-board__tile"></div>
+          <div class="guess-board__tile"></div>
+          <div class="guess-board__tile"></div>
+          <div class="guess-board__tile"></div>
+          <div class="guess-board__tile"></div>
+          <div class="guess-board__tile"></div>
+          <div class="guess-board__tile"></div>
+          <div class="guess-board__tile"></div>
+          <div class="guess-board__tile"></div>
+          <div class="guess-board__tile"></div>
+          <div class="guess-board__tile"></div>
+          <div class="guess-board__tile"></div>
+          <div class="guess-board__tile"></div>
+          <div class="guess-board__tile"></div>
+          <div class="guess-board__tile"></div>
+          <div class="guess-board__tile"></div>
+          <div class="guess-board__tile"></div>
+          <div class="guess-board__tile"></div>
+          <div class="guess-board__tile"></div>
+        </div>
+
+        <div class="keyboard__container">
+          <div class="keyboard__row" data-keyboard>
+            <button class="keyboard__key" data-key="Q">Q</button>
+            <button class="keyboard__key" data-key="W">W</button>
+            <button class="keyboard__key" data-key="E">E</button>
+            <button class="keyboard__key" data-key="R">R</button>
+            <button class="keyboard__key" data-key="T">T</button>
+            <button class="keyboard__key" data-key="Y">Y</button>
+            <button class="keyboard__key" data-key="U">U</button>
+            <button class="keyboard__key" data-key="I">I</button>
+            <button class="keyboard__key" data-key="O">O</button>
+            <button class="keyboard__key" data-key="P">P</button>
+          </div>
+          <div class="keyboard__row" data-keyboard>
+            <div class="keyboard__spacer"></div>
+            <button class="keyboard__key" data-key="A">A</button>
+            <button class="keyboard__key" data-key="S">S</button>
+            <button class="keyboard__key" data-key="D">D</button>
+            <button class="keyboard__key" data-key="F">F</button>
+            <button class="keyboard__key" data-key="G">G</button>
+            <button class="keyboard__key" data-key="H">H</button>
+            <button class="keyboard__key" data-key="J">J</button>
+            <button class="keyboard__key" data-key="K">K</button>
+            <button class="keyboard__key" data-key="L">L</button>
+            <div class="keyboard__spacer"></div>
+          </div>
+          <div class="keyboard__row" data-keyboard>
+            <button class="keyboard__key large" data-enter>Enter</button>
+            <button class="keyboard__key" data-key="Z">Z</button>
+            <button class="keyboard__key" data-key="X">X</button>
+            <button class="keyboard__key" data-key="C">C</button>
+            <button class="keyboard__key" data-key="V">V</button>
+            <button class="keyboard__key" data-key="B">B</button>
+            <button class="keyboard__key" data-key="N">N</button>
+            <button class="keyboard__key" data-key="M">M</button>
+            <button class="keyboard__key large" data-delete>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="24"
+                viewBox="0 0 24 24"
+                width="24"
+                class="game-icon"
+                data-testid="icon-backspace"
+              >
+                <path
+                  d="M22 3H7c-.69 0-1.23.35-1.59.88L0 12l5.41 8.11c.36.53.9.89 1.59.89h15c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H7.07L2.4 12l4.66-7H22v14zm-11.59-2L14 13.41 17.59 17 19 15.59 15.41 12 19 8.41 17.59 7 14 10.59 10.41 7 9 8.41 12.59 12 9 15.59z"
+                ></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <p>
+          <span class="bold">Word's the Word!</span> was hand-coded by Brian Coppola using vanilla JavaScript,
+          CSS,&#160;and&#160;HTML.
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>
