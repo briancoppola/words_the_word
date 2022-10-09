@@ -6,7 +6,7 @@ This is an effort to re-create the amazing Wordle app that's been sweeping the u
 
 ## Features
 
-- Game is playable with both the player's keyboard and the keyboard interface in the game
+- Game is playable with both the player's physical keyboard and the keyboard interface in the game
 - A target word .js file that the game randomly pulls a word from with each game
 - A dictionary .js file that's used to test if the player's guess is a real word 
 - Temporary timed error modals that alert the player if the guess word is either not in the dictionary or is shorter than five letters
