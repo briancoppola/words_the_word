@@ -2,7 +2,7 @@
 A JavaScript word game that's REALLY similar to another popular word game you may have seen.
 
 ## Description
-This is an effort to re-create the amazing Wordle app that's been sweeping the universe since 2021. It plays exactly the same, as the game player has six tries to guess a target five-letter word randomly chosen by the app. Each unsuccessful guess will reveal whether each letter in the guessed word is present in the target word, and if so, if the letter is in the same location as in the target word. A successful guess of the target word ends the game immediately as a victory, and a failure to guess the target word after six guesses ends in a loss.
+This is a hand-coded effort to re-create the amazing Wordle app that's been sweeping the universe since 2021. It plays exactly the same, as the game player has six tries to guess a target five-letter word randomly chosen by the app. Each unsuccessful guess will reveal whether each letter in the guessed word is present in the target word, and if so, if the letter is in the same location as in the target word. A successful guess of the target word ends the game immediately as a victory, and a failure to guess the target word after six guesses ends in a loss.
 
 ## Features
 
